@@ -1,0 +1,157 @@
+/* ===== BODY & GLOBAL ===== */
+body {
+  background: #0A1D37;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(45deg, #001F54, #083D77);
+  padding: 25px;
+  text-align: center;
+  color: #ffbd09;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  color: #083D77;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  background: #083D77;
+  color: #ffbd09;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+/* ===== LABEL ===== */
+label {
+  display: block;
+  margin: 6px 0;
+}
+
+/* ===== INPUT & TEXTAREA ===== */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #083D77;
+  border-radius: 10px;
+  margin-top: 4px;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #F9F9F9;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+textarea::placeholder {
+  color: #083D77;
+  font-style: italic;
+}
+
+/* ===== BUTTON ===== */
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #083D77, #001F54);
+  color: #ffbd09;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #001F54, #083D77);
+  color: #fff;
+}
+
+/* ===== RESULT ===== */
+#result {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  color: #083D77;
+  display: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#result h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#result th,
+#result td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#result th {
+  background: #083D77;
+  color: #ffbd09;
+}
+
+#result tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+
+  #result {
+    margin: 15px;
+    padding: 15px;
+  }
+}
